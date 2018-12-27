@@ -1,0 +1,29 @@
+@media (max-width: 991px) {
+    .nav-item {
+        font-size: 24px;
+        transition: none;
+    }
+    .nav-item-scroll {
+        transition: none
+    }
+    .logo-container {
+        margin: 20px;
+    }
+    nav {
+        background: #ffffff!important;
+    }
+    .top-heading {
+        width: 100%;
+    }
+    .top-heading h1 {
+        font-size: 32px;
+    }
+    .row {
+        margin: 0!important;
+    }
+}
+@media (max-width: 575px) {
+    .logo-container {
+        width: 100px;
+    }
+}

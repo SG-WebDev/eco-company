@@ -1,0 +1,298 @@
+/* HEAD */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+:root {
+    --green: #66cc99;
+    --gray: #666666;
+    --dark: #333333;
+}
+a {
+    color: #ffffff;
+    transition: all 0.5s;
+}
+a:hover {
+    transform: scale(1.05);
+    transition: all 0.5s;
+    color: #ffffff;
+    text-decoration: none;
+}
+.img-rwd {
+    width: 100%;
+    height: auto;
+}
+html, body {
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+header {
+    position: relative;
+    height: 100vh;
+    background: url("../img/bg_header.jpg") center no-repeat;
+    background-size: cover;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.75s;
+    width: 200px;
+}
+.top-heading {
+    color: #ffffff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.top-heading h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 64px;
+    background: rgba(0,0,0,0.5);
+    padding: 25px;
+}
+.top-heading hr {
+    border-top: 3px solid rgba(255,255,255,1);
+}
+/* NAVBAR */
+nav {
+    background: transparent;
+    transition: all 0.75s;
+}
+.nav-scroll {
+    background: #ffffff;
+    transition: all 0.75s;
+}
+.icon-bar {
+    width: 22px;
+    height: 2px;
+    background-color: #555555;
+    display: block;
+    transition: all 0.2s;
+    margin-top: 4px
+}
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+}
+
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+button:focus {
+    outline: 0;
+}
+/* NAV ITEM HOVER */
+.nav-item {
+    color: #444444!important;
+    font-size: 18px;
+    transition: all 0.75s;
+    margin: 0 10px;
+    font-weight: 700;
+}
+.nav-item-scroll {
+    color: #444444!important;
+    transition: all 0.75s;
+}
+.nav-hover a {
+    padding: 10px 8px;
+    border-top: 2px solid #66cc99;
+    text-shadow: none;
+    transition: max-width 0.5s;
+}
+.nav-hover a::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    padding: 0;
+    border-bottom: 2px solid #66cc99;
+    color: #66cc99!important;
+    content: attr(data-hover);
+    white-space: nowrap;
+    max-width: 0;
+}
+.nav-hover a.nav-item-scroll::before {
+    color: #66cc99!important;
+}
+
+.nav-hover a:hover::before {
+    max-width: 100%;
+    padding: 10px 8px;
+    transition: max-width 0.5s;
+}
+.navbar-nav a.active {
+    color: #66cc99!important;
+    border-bottom: 2px solid #66cc99;
+}
+/* MATERIAL INPUTS */
+.material {
+    position: relative;
+    padding: 0;
+    margin: 20px;
+    border: none;
+    overflow: visible;
+}
+.material input, .material textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent!important;
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+    cursor: text;
+    color: #ffffff;
+    resize: none;
+}
+.material input:focus, .material textarea:focus {
+    border-bottom: 1px solid #66cc99;
+    transition: all 500ms ease;
+}
+.material input::placeholder, .material textarea::placeholder {
+    transition: color 300ms linear;
+    color: rgba(255,255,255, 0.8);
+}
+.material input:not(:focus)::placeholder, .material textarea:not(:focus)::placeholder {
+    color: transparent;
+}
+.material label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 120%;
+    color: #66cc99;
+    -webkit-transform-origin: 0 -150%;
+    transform-origin: 0 -150%;
+    transition: -webkit-transform 300ms ease;
+    transition: transform 300ms ease;
+    transition: transform 300ms ease, -webkit-transform 300ms ease;
+    pointer-events: none;
+}
+.material input:focus ~ label,
+.material input:valid ~ label,
+.material textarea:focus ~ label,
+.material textarea:valid ~ label{
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+}
+
+/* STYLES */
+.content {
+    margin: 50px 0 0 0;
+}
+section {
+    padding: 50px 0;
+}
+section h1 {
+    margin: 25px 0;
+}
+#features {
+    background-color: #66cc99;
+    padding: 50px 0;
+}
+.features {
+    margin-top: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+.feature-icon {
+    background-color: #ffffff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feature-icon i {
+    color: #888888;
+    font-size: 42px;
+}
+.feature-text {
+    color: #ffffff;
+    margin-top: 25px;
+    font-weight: 300;
+}
+.portfolio-item .portfolio-text {
+    font-size: 18px;
+}
+#contact {
+    background-color: var(--gray);
+    padding: 50px 0 0 0;
+    color: #ffffff;
+}
+.contact-data {
+    padding: 25px 0;
+}
+.contact-data i {
+    color: #66cc99;
+    font-size: 30px;
+    margin-right: 10px;
+}
+.contact-data a:hover {
+    color: #66cc99;
+}
+.contact-data span, .contact-data a {
+    text-align: right;
+}
+.copyright {
+    background-color: var(--dark);
+    font-size: 14px;
+    padding: 25px;
+}
+.btn-container {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.btn-form {
+    padding: 10px 30px;
+    background: #66cc99;
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transform: none;
+}
+.btn-form:hover {
+    background-color: #44aa77;
+    transition: background-color 300ms;
+    transform: none;
+}
