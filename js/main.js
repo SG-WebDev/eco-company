@@ -1,6 +1,7 @@
 AOS.init({
     duration: 750, // values from 0 to 3000, with step 50ms
     disable: 'mobile',
+    once: true,
 });
 if ($(window).width() < 992) {
     $('.navbar-nav').removeClass('nav-hover');
