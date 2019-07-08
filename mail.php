@@ -31,7 +31,7 @@ if ($message === ''){
   exit();
 }
 $content="Wiadomość z formularza kontaktowego od: ".$name. "\nE-mail: ".$email."\n"."Numer telefonu: ".$phone."\n"."Treść:\n".$message;
-$recipient = "kontakt@ozeexpert.pl";
+$recipient = "lorem@ipsum.pl";
 $mailheader = "Content-Type: text/html; charset=utf-8 \r\n"."From: $email \r\n";
 mail($recipient, $subject, $content, $mailheader) or die("Error!");
 print json_encode(array('message' => 'Wiadomość została wysłana!', 'code' => 1));
