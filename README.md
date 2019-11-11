@@ -2,7 +2,8 @@
 
 # About
 
-Site under construction.
+Eco company business site
 
-Company Site
+# Demo
 
+https://sg-webdev.github.io/eco-company/
