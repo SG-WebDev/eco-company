@@ -156,7 +156,7 @@ button:focus {
 .material {
     position: relative;
     padding: 0;
-    margin: 20px;
+    margin: 20px 0;
     border: none;
     overflow: visible;
 }
