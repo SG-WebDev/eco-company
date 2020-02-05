@@ -189,8 +189,6 @@ button:focus {
     position: absolute;
     top: 10px;
     left: 10px;
-    font-size: 120%;
-    color: #66cc99;
     -webkit-transform-origin: 0 -150%;
     transform-origin: 0 -150%;
     transition: -webkit-transform 300ms ease;
