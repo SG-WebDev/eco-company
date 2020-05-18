@@ -214,11 +214,11 @@ section {
 section h1 {
     margin: 25px 0;
 }
-#features {
+.features {
     background-color: #66cc99;
     padding: 50px 0;
 }
-.features {
+.featuresList {
     margin-top: 25px;
     display: flex;
     align-items: flex-start;
@@ -251,7 +251,7 @@ section h1 {
 .portfolio-item .portfolio-text {
     font-size: 18px;
 }
-#contact {
+.contact {
     background-color: var(--gray);
     padding: 50px 0 0 0;
     color: #ffffff;
